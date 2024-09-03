@@ -1,0 +1,45 @@
+body{
+background-image: url("mario-bg.jpg");
+font-family: arial;
+text-align: center;
+background-size: cover;
+}
+
+#board{
+    width: 540px;
+    height: 540px;
+    background-image: url("soil.png");
+    background-size: cover;
+    border: 3px dashed whitesmoke;
+    border-radius: 25px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#board div{
+    width: 180px;
+    height: 180px;
+    background-image: url("pipe.png");
+    background-size: cover;
+}
+
+#board div img{
+    width: 100px;
+    height: 100px;
+    user-select: none; /* these lines of code prevent the tiles from being highlighted */ 
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#timer{
+    position: fixed;
+    top: 30px;
+    left: 70px;
+    color: red;
+    background-color: aliceblue;
+    padding: 5px;
+}
